@@ -36,4 +36,9 @@ public class SocialUser {
     public int hashCode(){
         return Objects.hash(id);
     }
+
+    public void setSocialProfile(SocialProfile socialProfile) {
+        socialProfile.setUser(this);
+        this.socialProfile = socialProfile;
+    }
 }
